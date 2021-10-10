@@ -14,9 +14,9 @@ func main() {
 	fmt.Println("Ejercicio 1.")
 	xd := bufio.NewReader(os.Stdin)
 	fmt.Println("Escribe una frase.")
-	//var frase string
+	//var frase stri
 	//frase = "hola como estas"
-	//fmt.Scanln(&frase)
+	//fmt.Scanln(&frase
 	//frasea := bufio.NewScanner((os.Stdin))
 	//fmt.Printf("Tu frase fue: %s", frase)
 	frase, _ := xd.ReadString('\n')
