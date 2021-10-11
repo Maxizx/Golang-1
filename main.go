@@ -1,14 +1,45 @@
 package main
 
 import (
-
-	//"bufio"
+	"bufio"
 	"fmt"
-	//"os"
+	"os"
 )
 
-
 func main() {
+	var num int
+	fmt.Print("elegir un numero del 1 al 5\n")
+	fmt.Scan(&num)
+
+	switch num {
+
+	case 1:
+		ejer1()
+		//break
+
+	case 2:
+		ejer2()
+		//break
+
+	case 3:
+		ejer3()
+		//break
+
+	case 4:
+		ejer4()
+		//break
+		//
+	case 5:
+		ejer5()
+		//break
+
+	default:
+		fmt.Println("¿sos idiota? del 1 al 5 te dije")
+	}
+
+}
+
+func ejer1() {
 
 	fmt.Println("Ejercicio 1.")
 	xd := bufio.NewReader(os.Stdin)
@@ -22,15 +53,23 @@ func main() {
 	fmt.Println("Tu frase fue:", frase)
 	//str := bufio.NewScanner(os.Stdin)
 	//fmt.Printf("Tus frase fue: %s", str.Text())
+}
 
-	fmt.Println("----------------------------------------------------")
+///////////////////////////////////////////////////////////////////////////////
+func ejer2() {
+
+	//fmt.Println("----------------------------------------------------")
 	fmt.Println("Ejercicio 2")
 	fmt.Println("Escribe un numero.")
 	var w int
 	fmt.Scanln(&w)
 	fmt.Printf("Tu numero es: %d\n ", w)
+}
 
-	fmt.Println("----------------------------------------------------")
+//////////////////////////////////////////////////////////////////////////////////////////
+func ejer3() {
+
+	//fmt.Println("----------------------------------------------------")
 	fmt.Println("ejercicio 3")
 	fmt.Println("Escribe tu primer num")
 	var x, y int
@@ -38,8 +77,11 @@ func main() {
 	fmt.Println("Escribe tu segundo num.")
 	fmt.Scan(&y)
 	fmt.Printf("total %d\n", x+y)
+}
 
-	fmt.Println("----------------------------------------------------")
+func ejer4() {
+
+	//fmt.Println("----------------------------------------------------")
 	fmt.Println("ejercicio 4")
 	fmt.Println("Escribe tu nombre")
 	var (
@@ -56,8 +98,11 @@ func main() {
 	fmt.Printf("Te llamas %s", nombre)
 	fmt.Printf(", tu apellido es %s", apellido)
 	fmt.Printf(" y tenes %d\n", edad)
+}
 
-	fmt.Println("----------------------------------------------------")
+func ejer5() {
+
+	//fmt.Println("----------------------------------------------------")
 	var a, b, c, d, e int
 	fmt.Println("Escribe tu primer num")
 	fmt.Scan(&a)
@@ -73,39 +118,4 @@ func main() {
 
 	fmt.Println("Tareas realizadas con exito")
 	//fmt.Printf("%d %s", a+b+c+d+e)
-}*/
-
-func main() {
-	var usuario, contra string
-	fmt.Println("Ingrese su usuario:")
-	fmt.Scanln(&usuario)
-	fmt.Println("tu usuario es:", usuario)
-	fmt.Println("Ingrese contraseña")
-	fmt.Scanln(&contra)
-	/*/if contra == "hola" {
-			fmt.Println("bienvenido", usuario)
-		} else {
-			for x := contra ;
-			x == contra;
-			fmt.scan(&contra)
-
-			}
-			fmt.Println("Contraseña incorrecta")
-		}
-
-
-	}*/
-	if contra == "hola" {
-		fmt.Print(1)
-	} else {
-		fmt.Print(0)
-	}
-	for x := 0; x == 1; 
-		if contra == "hola" {
-		fmt.Println("bienvenido", usuario)
-	} else {
-		fmt.Println("Contraseña incorrecta") {
-		
-		}
-	}
 }
