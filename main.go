@@ -1,13 +1,12 @@
 package main
 
 import (
-	//"bufio"
-	//"os"
 
-	"bufio"
+	//"bufio"
 	"fmt"
-	"os"
+	//"os"
 )
+
 
 func main() {
 
@@ -74,4 +73,39 @@ func main() {
 
 	fmt.Println("Tareas realizadas con exito")
 	//fmt.Printf("%d %s", a+b+c+d+e)
+}*/
+
+func main() {
+	var usuario, contra string
+	fmt.Println("Ingrese su usuario:")
+	fmt.Scanln(&usuario)
+	fmt.Println("tu usuario es:", usuario)
+	fmt.Println("Ingrese contraseña")
+	fmt.Scanln(&contra)
+	/*/if contra == "hola" {
+			fmt.Println("bienvenido", usuario)
+		} else {
+			for x := contra ;
+			x == contra;
+			fmt.scan(&contra)
+
+			}
+			fmt.Println("Contraseña incorrecta")
+		}
+
+
+	}*/
+	if contra == "hola" {
+		fmt.Print(1)
+	} else {
+		fmt.Print(0)
+	}
+	for x := 0; x == 1; 
+		if contra == "hola" {
+		fmt.Println("bienvenido", usuario)
+	} else {
+		fmt.Println("Contraseña incorrecta") {
+		
+		}
+	}
 }
