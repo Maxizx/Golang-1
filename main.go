@@ -62,7 +62,7 @@ func ejer2() {
 	fmt.Println("Ejercicio 2")
 	fmt.Println("Escribe un numero.")
 	var w int
-	fmt.Scanln(&w)
+	fmt.Scan(&w)
 	fmt.Printf("Tu numero es: %d\n ", w)
 }
 
